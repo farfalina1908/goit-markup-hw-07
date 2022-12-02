@@ -22,38 +22,42 @@
    </head>
 
    <body class="body-page">
-      <header class="header-style">
+      <header class="header-page">
          <!-- Основна навігація -->
          <div class="conteiner main-nav">
             <nav class="main-nav">
                <a href="/" class="logo link"
-                  >Web<span class="logo-end-header">Studio</span></a
+                  >Web<span class="logo__end-header">Studio</span></a
                >
 
                <ul class="site-nav list">
-                  <li class="item">
-                     <a href="./index.html" class="link">Студія</a>
+                  <li class="site-nav__item">
+                     <a
+                        href="./index.html"
+                        class="link site-nav__link "
+                        >Студія</a
+                     >
                   </li>
-                  <li class="item">
-                     <a href="./portfolio.html" class="link current"
+                  <li class="site-nav__item">
+                     <a href="./portfolio.html" class="link site-nav__link site-nav__link--current"
                         >Портфоліо</a
                      >
                   </li>
-                  <li class="item">
-                     <a href="#" class="link">Контакти</a>
+                  <li class="site-nav__item">
+                     <a href="#" class="link site-nav__link">Контакти</a>
                   </li>
                </ul>
             </nav>
 
             <ul class="contact-nav list">
-               <li class="item">
+               <li class="contact-nav__item">
                   <div>
                      <a
                         href="mailto:info@devstudio.com"
-                        class="contact-info link"
+                        class="contact-info link contact-nav__link"
                      >
                         <div class="contact-way">
-                           <svg class="mail-icon">
+                           <svg class="contact-nav__mail-icon">
                               <use
                                  href="./images/symbol-defs.svg#icon-envelope"
                               ></use>
@@ -64,11 +68,14 @@
                   </div>
                </li>
 
-               <li class="item">
+               <li class="contact-nav__item">
                   <div>
-                     <a href="tel:+380961111111" class="contact-info link">
+                     <a
+                        href="tel:+380961111111"
+                        class="contact-info link contact-nav__link"
+                     >
                         <div class="contact-way">
-                           <svg class="phone-icon">
+                           <svg class="contact-nav__phone-icon">
                               <use
                                  href="./images/symbol-defs.svg#icon-smartphone"
                               ></use>
@@ -293,27 +300,31 @@
                <div>
                   <div class="logo-position">
                      <a href="/" class="logo link"
-                        >Web<span class="logo-end-footer">Studio</span></a
+                        >Web<span class="logo__end-footer">Studio</span></a
                      >
                   </div>
                   <address class="contact-nav">
-                     <ul class="list">
+                     <ul class="address list">
                         <li>
                            <a
                               href="https://goo.gl/maps/HGfggYdq6uxmMYeL7"
                               target="_blank"
                               rel="noreferrer noopener nofollow"
-                              class="address link"
+                              class="address__link contact-nav__link link"
                               >м. Київ, пр-т Лесі Українки, 26</a
                            >
                         </li>
                         <li>
-                           <a href="mailto:info@devstudio.com" class="mail link"
+                           <a
+                              href="mailto:info@devstudio.com"
+                              class="address__mail contact-nav__link link"
                               >info@devstudio.com</a
                            >
                         </li>
                         <li>
-                           <a href="tel:+380961111111" class="tel link"
+                           <a
+                              href="tel:+380961111111"
+                              class="address__tel contact-nav__link link"
                               >+38 096 111 11 11</a
                            >
                         </li>
@@ -323,11 +334,14 @@
 
                <div class="join">
                   <div>
-                     <h2 class="join-title">Приєднуйтесь</h2>
-                     <ul class="team-social-list list">
+                     <h2 class="join__title">Приєднуйтесь</h2>
+                     <ul class="social-networks list">
                         <li>
-                           <a href="#" class="team-social-item reverse link">
-                              <svg class="social-icon-style">
+                           <a
+                              href="#"
+                              class="social-networks__item social-networks__item--reverse link"
+                           >
+                              <svg class="social-networks__icon-style">
                                  <use
                                     href="./images/symbol-defs.svg#icon-instagram"
                                     width="20"
@@ -337,8 +351,11 @@
                            </a>
                         </li>
                         <li>
-                           <a href="#" class="team-social-item reverse link">
-                              <svg class="social-icon-style">
+                           <a
+                              href="#"
+                              class="social-networks__item social-networks__item--reverse link"
+                           >
+                              <svg class="social-networks__icon-style">
                                  <use
                                     href="./images/symbol-defs.svg#icon-twitter"
                                     width="20"
@@ -348,8 +365,11 @@
                            </a>
                         </li>
                         <li>
-                           <a href="#" class="team-social-item reverse link">
-                              <svg class="social-icon-style">
+                           <a
+                              href="#"
+                              class="social-networks__item social-networks__item--reverse link"
+                           >
+                              <svg class="social-networks__icon-style">
                                  <use
                                     href="./images/symbol-defs.svg#icon-facebook"
                                     width="20"
@@ -359,8 +379,11 @@
                            </a>
                         </li>
                         <li>
-                           <a href="#" class="team-social-item reverse link">
-                              <svg class="social-icon-style">
+                           <a
+                              href="#"
+                              class="social-networks__item social-networks__item--reverse link"
+                           >
+                              <svg class="social-networks__icon-style">
                                  <use
                                     href="./images/symbol-defs.svg#icon-linkedin"
                                     width="20"
@@ -373,22 +396,22 @@
                   </div>
                </div>
                <div class="subscribe">
-                  <h2 class="subscribe-title">Підпишіться на розсилку</h2>
+                  <h2 class="subscribe__title">Підпишіться на розсилку</h2>
                   <form
                      name="subscribe-form"
                      autocomplete="on"
-                     class="subscribe-form"
+                     class="subscribe__form"
                   >
                      <input
                         type="email"
                         name="email"
-                        class="subscribe-field"
+                        class="subscribe__field"
                         placeholder="E-mail"
                      />
-                     <button type="submit" class="subscribe-button">
+                     <button type="submit" class="subscribe__button">
                         Підписатися
 
-                        <svg class="icon-send">
+                        <svg class="subscribe__icon-send">
                            <use href="./images/symbol-defs.svg#icon-send"></use>
                         </svg>
                      </button>
