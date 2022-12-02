@@ -614,7 +614,7 @@ html {
 }
 
 /* our clents */
-.our-clients-title {
+.clients__title {
    text-align: center;
    margin-top: 94px;
    margin-bottom: 50px;
@@ -623,18 +623,18 @@ html {
    font-size: 36px;
    line-height: calc(42 / 36);
 }
-.our-clients-list {
+.clients__list {
    display: flex;
 }
 
-.our-client-items {
+.clients__items {
    margin-bottom: 94px;
 }
-.our-client-items:not(:last-child) {
+.clients__items:not(:last-child) {
    margin-right: 30px;
 }
 
-.our-clients-logo {
+.clients__logo {
    width: 170px;
    height: 92px;
    padding: 16px 32px;
@@ -645,8 +645,8 @@ html {
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-clients-logo:hover,
-.our-clients-logo:focus {
+.clients__logo:hover,
+.clients__logo:focus {
    fill: var(--accent-color);
    border-color: var(--accent-color);
 }
