@@ -171,7 +171,7 @@ html {
    background-color: #c4c4c4;
    text-align: center;
 }
-.overlay-hero {
+.hero__overlay {
    height: 600px;
    max-width: 1600px;
    margin-left: auto;
